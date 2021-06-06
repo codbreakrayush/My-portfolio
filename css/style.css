@@ -1,0 +1,376 @@
+.navigation {
+    font-family: var(--font-3);
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.nav-left {
+    color:aliceblue;
+    font-size: 25px;
+    padding-left: 2vw;
+    text-shadow: 2px 2px rgb(126, 122, 122);
+    position:sticky;
+    left : 1vw;
+    top: 1vh;
+    flex-basis: 30%;
+    align-self: start;
+}
+.nav-left span{
+    color: yellowgreen;
+    font-size:30px;
+}
+.nav-center{
+    flex-basis: 40%;
+    
+    /* background-color: aqua; */
+}
+.nav-right {
+    align-self: flex-start;
+    /* background-color: #04AA6D; */
+    height: inherit;
+    
+}
+
+.navigation #myLinks {
+    display: none;
+    margin-top: 50px;
+}
+
+.navigation #myLinks a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 14px 16px;
+    font-family: var(--font-2);
+}
+
+.navigation #myLinks a:hover{
+    font-size:xx-large;
+    color: yellowgreen;
+}
+.nav-right a {
+    margin: 4px 30px;
+    padding: 2px 12px;
+    padding-top: 4px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.nav-right a.icon {
+    background: black;
+    display: block;
+    /* position:fixed; */
+    right: 1vw;
+    top: 1vh;
+}
+
+.nav-right a:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+
+.content {
+    height: 550px;
+    /* background-color: rgb(206, 240, 234); */
+    display: flex;
+    flex-direction: column;
+}
+
+.content::after{
+    content:"";
+    background-image: var(--background);
+    position:absolute;
+    width:100%;
+    height: inherit;
+    opacity:1;
+    z-index: -1;
+}
+
+.content .img{
+    padding-top: 50px;
+    align-self: center;
+}
+
+.content .img img{
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+}
+
+.intro{
+    font-family: var(--font-2);
+    font-size:larger;
+    align-self: center;
+    text-align: center;
+    margin: 15px 0px;
+    padding: 0;
+}
+
+.intro h4,p{
+    margin: 0;
+    padding: 0;
+}
+.intro strong{
+    color: yellowgreen;
+    font-family: var(--font-3);
+    font-size: x-large;
+}
+
+.more-info{
+    font-family: var(--font-2);
+    font-size:large;
+    align-self: center;
+    text-align: center;
+    margin: 15px 0px;
+    padding: 0;
+}
+
+.more-info strong{
+    color: yellowgreen;
+    font-family: var(--font-3);
+    font-size: medium;
+}
+
+.logo{
+    align-self: center;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo img{
+    height:50px;
+    width: 50px;
+    margin: 0px 2px;
+    padding: 0;
+    border:1px solid rgb(185, 183, 183);
+    border-radius: 50%;
+}
+
+.navsets{
+    height:auto;
+    
+    display: flex;
+    max-width: 80%;
+    margin-top:80px;
+    /* justify-content: space-between; */
+}
+
+.navsets-left{
+    /* flex-basis: 40%; */
+    text-align: center;
+    flex:0 10 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background);
+    background-repeat: no-repeat;
+    background-size: 410px 450px;
+    /* opacity: 0.25; */
+}
+
+/* .navsets-left::after{
+    content: "";
+    position: absolute;
+    background: var(--background);
+    background-repeat: no-repeat;
+    background-size: 410px 450px;
+    z-index: 1;
+} */
+.navsets-left-o{
+    width:40%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navsets-right{
+    width:60%;
+    text-align:left;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    font-family: var(--font-2);
+    font-size: large;
+    padding: 10px;
+}
+
+.nr-2 span{
+    margin-top: auto;
+    overflow: auto;
+}
+/* .navsets-left img{
+    height: 400px;
+    width:400px
+} */
+
+.op{
+    text-align: center;
+}
+.navsets-right p, ul{
+    text-align: left;
+    list-style-type: square;
+}
+
+.navsets-right h2{
+    font-family: var(--font-1);
+    margin-top: 30px;
+    margin-bottom: 6px;
+}
+
+.navsets-right span{
+    background: var(--background);
+    border-radius: 10px;
+    margin: 0px 10px;
+    padding: 0px 10px;
+    margin-top: 10px;
+    font-family: var(--font-2);
+    color: aliceblue;
+    overflow: auto;
+}
+
+.navsets-left h1{
+    font-family: var(--font-1);
+    font-size:60px;
+    color: white;
+    margin-top: -80px;
+    margin-right: 80px;
+}
+
+.navsets-left-o h1{
+    font-family: var(--font-1);
+    font-size:60px;
+    color: white;
+    margin-top: -80px;
+    margin-right: 0px;
+    margin-left: 10px;
+}
+#skills{
+    height:380px
+}
+
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+
+.institute{
+    margin:20px 10px;
+}
+.institute h2,h3,h4{
+    padding: 0;
+    margin: -5px 0px;
+}
+
+.institute h2{
+    font-family: var(--font-1);
+}
+
+.institute h3,h4{
+    font-family: var(--font-2);
+    color: white;
+    font-size: medium;
+}
+
+.institute::after{
+    content: "";
+    position: absolute;
+    background-color: #000;
+    top:8px;
+    left: -58px;
+    width:16px;
+    height:16px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 8px rgb(134, 122, 122, 73% );
+    z-index: 1;
+}
+
+#Education{
+    height:400px;
+    background: var(--background);
+    background-repeat:no-repeat;
+    background-size: 80vw 500px;
+    margin-bottom: 100px;
+    padding-top: 25px;
+}
+
+.footer {
+    height: auto;
+    background-color: black;
+    /* opacity: 0.7; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.footer1{
+    display: flex;
+    justify-content: space-between
+}
+
+.sign{
+   margin-right: 100px;
+   margin-left: 0;
+   padding:0 0;
+}
+
+.sign h1{
+    font-family: var(--font-m);
+    font-size: 70px;
+    text-shadow: 2px 2px rgb(233, 145, 64);
+    color: brown;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    margin-left:200px;
+}
+
+.social h4{
+    padding-top: 20px;
+    font-size: large;
+    padding-bottom: 20px;
+}
+
+.img img{
+    height: 25px;
+    width:25px;
+}
+
+.img a{
+    text-decoration: none;
+    color: grey;
+    font-size: large;
+    font-family: var(--font-2);
+    margin: 0px 0px;
+}
+
+.im{
+    margin-left: 50px ;
+    padding-top: 68px;
+}
+
+.footer2{
+    background-color: black;
+    opacity: 0.7;
+    text-align: center;
+    color: white;
+    font-family: var(--font-2);
+}
+
+.footer2 strong{
+    font-size:large;
+    color:red;
+}

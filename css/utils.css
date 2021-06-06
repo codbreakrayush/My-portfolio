@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Teko:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+:root{
+    --main-bg-color: rgb(119, 161, 35);
+    --second-bg-color: rgb(96, 99, 98);
+    --font-1:  'Teko', sans-serif;
+    --font-2: 'Baloo Bhaina 2', cursive;
+    --font-3: 'Limelight', cursive;
+    --font-m: 'Luckiest Guy', cursive;
+    --background: linear-gradient(to bottom right, violet, blue)
+}
+
+body{
+    margin: 0;
+}
+
+.font-1{
+    font-family: var(--font-1);
+}
+
+.font-2{
+    font-family: var(--font-2);
+}
+
+/* max width */
+.mw-1{
+    max-width: 75vw;
+}
+
+.mw-2{
+    max-width: 60vw;
+}
+
+/* Margin Auto */
+.m-auto{
+    margin:auto;
+}
+
+/* Button class */
+.btn{
+    padding: 0px 14px;
+    padding-top: 3px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: var(--font-2);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color:white;
+    background-color: var(--main-bg-color);
+    transition: all 0.5s ease-in-out;
+}
+
+.form-input{
+    padding: 1px 7px;
+    padding-top: 3px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 0 15px;
+    font-family: var(--font-2);
+}
+
+.form-box input,textarea{
+width: 44vw;
+padding: 10px 6px;
+margin: 7px
+}
+

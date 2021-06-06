@@ -1,0 +1,129 @@
+@media screen and (max-width:1400px) and (min-width:760px) {
+    .nh-1 {
+        height: auto;
+        flex-direction: column;
+        max-width: 100%;
+        /* justify-content: center;
+        align-items: center; */
+    }
+    .nl-1 {
+        flex-basis: auto;
+        background-repeat: no-repeat;
+        background-size: 100vw 80px;
+    }
+    .nl-1 h1 {
+        margin-top: auto;
+        /* margin-right: auto; */
+        text-align: center;
+    }
+    .nr-1 {
+        /* justify-self: center; */
+        align-self: center;
+        text-align: center;
+    }
+    
+    .footer1 {
+        flex-direction: column;
+    }
+    .im {
+        margin-left: 200px;
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .navigation{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        top:auto;
+        left:auto;
+    }
+    .nav-left{
+        order:1;
+        padding-left: 25vw;
+    }
+    .nav-center{
+        order:3;
+    }
+    .nav-right{
+        order: 2;
+        padding-left: 40vw;
+        padding-top: 20px;
+    }
+    .navigation #myLinks{
+        margin-top: 5px;
+    }
+    .navsets {
+        height: auto;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .navsets-left {
+        flex-basis: auto;
+        background-repeat: no-repeat;
+        background-size: 100vw 80px;
+    }
+    .navsets-left h1 {
+        margin-top: auto;
+        /* margin-right: auto; */
+        text-align: center;
+    }
+    .navsets-right {
+        align-self: center;
+        text-align: center;
+    }
+    .navsets-right span {
+        margin: 0px 1px;
+        padding: 0px 10px;
+        margin-top: 20px;
+    }
+    .navsets-left-o {
+        flex-basis: auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navsets-left-o h1 {
+        text-align: end;
+        margin-top: auto;
+        margin-left: 270px;
+    }
+    #skills {
+        height: auto;
+    }
+    #Education {
+        height: auto;
+        /* background: var(--background); */
+        background-repeat: no-repeat;
+        background-size: auto 1000px;
+        max-width: fit-content;
+        margin-bottom: 100px;
+        padding-top: 25px;
+    }
+    .footer1 {
+        flex-direction: column;
+    }
+    .im {
+        margin-left: 200px;
+        padding-top: 0px;
+    }
+    .sign {
+        margin-right: 50px;
+        margin-left: 50px;
+        padding: 0 0;
+    }
+    .sign h1 {
+        text-align: center;
+    }
+    .social {
+        margin-left: 145px;
+    }
+    .social h4 {
+        padding-top: 20px;
+        font-size: large;
+        padding-bottom: 20px;
+    }
+}
